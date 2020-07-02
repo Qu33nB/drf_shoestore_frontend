@@ -31,8 +31,8 @@ class App extends Component {
             <p>Shoe Brand/Size</p>
             {this.state.shoes.map(p => {
               console.log(p)
-              return (<li>{p.brand}/{p.size}</li>
-                        <p>{p.manufacturer</p>)
+              return (<React.Fragment><li>{p.brand}/{p.size}</li>
+                        <p>{p.manufacturer}</p></React.Fragment>)
             })}
           </ul>
         </header>
