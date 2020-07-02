@@ -32,7 +32,9 @@ class App extends Component {
             {this.state.shoes.map(p => {
               console.log(p)
               return (<React.Fragment><li>{p.brand}/{p.size}</li>
-                        <p>{p.manufacturer}</p></React.Fragment>)
+                        <p>Manufacturer: {p.manufacturer}</p>
+                        <p>Color: {p.color}/ Material: {p.material}</p>
+                        <p>Shoe type: {p.shoe_type}/ Fasten type: {p.fasten_type}</p></React.Fragment>)
             })}
           </ul>
         </header>
